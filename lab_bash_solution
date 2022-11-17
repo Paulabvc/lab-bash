@@ -1,0 +1,253 @@
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~
+$ cd Documents
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents
+$ cd Week_1
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1
+$ cd Day_1
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1
+$ cd Morning
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ git clone https://github.com/Paulabvc/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 40 (delta 14), reused 11 (delta 11), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 5.81 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+(1)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ echo Hello World!
+Hello World!
+
+(2)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ mkdir new_dir
+
+
+(3)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ rm -rf new_dir
+
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ ls
+lab-bash/
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning
+$ cd lab-bash
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+
+(4)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cp sed.txt sedcopy.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt  sedcopy.txt
+
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ mv sedcopy.txt lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cd ..
+
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+(5)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cp at.txt ../lorem-copy/; cp lorem.txt ../lorem-copy/
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat lorem/sed.txt
+cat: lorem/sed.txt: No such file or directory
+
+(6)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(7)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cp sed.txt ../lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+(8)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ head -n 3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+(9)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(10)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ echo "Homo homini lupus" sed.txt
+Homo homini lupus sed.txt
+
+(11)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ tail -n 3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+(12)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ sed -i 's/et/ET/' at.txt
+
+(13)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ whoami
+pbevi
+
+(14)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/pbevi/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem-copy (master)
+$ cd ..
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash (master)
+$ cd lorem
+
+(15)
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat sed.txt | wc -1
+wc: unknown option -- 1
+Try 'wc --help' for more information.
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$ cat sed.txt | wc -1
+wc: unknown option -- 1
+Try 'wc --help' for more information.
+
+pbevi@LAPTOP-IHHPGIAR MINGW64 ~/Documents/Week_1/Day_1/Morning/lab-bash/lorem (master)
+$
